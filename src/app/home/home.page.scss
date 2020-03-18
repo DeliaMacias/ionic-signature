@@ -1,1 +1,25 @@
 
+.item-margin {
+    margin-left: 60%;
+}
+.danger-button {
+    margin-right: 8px;
+    
+}
+
+
+div {
+    width: 85%;
+    height: 30%;
+    padding: 20px;
+    border: PowderBlue 5px solid;
+    background: rgb(255, 255, 255);
+  }
+  
+  .signature { 
+    box-sizing: content-box; 
+    /* Ancho  total: 160px + (2 * 20px) + (2 * 8px) = 216px
+       Altura total: 80px + (2 * 20px) + (2 * 8px) = 136px
+       Ancho de la caja de contenido: 160px
+       Altura de la caja de contenido: 80px */
+  }
