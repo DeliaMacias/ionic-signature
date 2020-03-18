@@ -1,14 +1,22 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      Ionic Canvas Signature
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content class="ion-padding ">
+  <div class="signature">
+    <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()">
+    </signature-pad>
   </div>
+  
+
+  <ion-item class="item-margin" lines="none">
+    <ion-button class="danger-button" color="danger" (click)="clear()"> Clear</ion-button>
+    <ion-button color="success" (click)="save()"> Save</ion-button>
+  </ion-item>
+  
 </ion-content>
+
